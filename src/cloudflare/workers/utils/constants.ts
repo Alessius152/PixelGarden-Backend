@@ -1,0 +1,6 @@
+
+const voidJson = "{}"
+
+export {
+    voidJson
+}

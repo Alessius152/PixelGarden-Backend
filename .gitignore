@@ -1,0 +1,8 @@
+.vscode
+node_modules
+dist
+logs
+.env
+src/wrangler.toml
+src/.wrangler
+.wrangler
