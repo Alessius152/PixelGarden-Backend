@@ -32,7 +32,6 @@ async function getPortionOfOwnerRooms(ownerId: number, cursorUuid: Buffer, curso
         description: r.dataValues.description,
         creationTime: r.dataValues.createdAt,
 
-        //TEMPORARLY
         members: {
             total: Math.floor(Math.random() * (1 - 12) + 12),
             activeNow: Math.floor(Math.random() * (1 - 12) + 12)
@@ -96,7 +95,6 @@ limit ${paginationLimits.roomsList.ofFriends + 1};
         roomId: bufferToUuid(r.uuidv7),
         creationTime: r.createdAt,
 
-        //TEMPORARLY
         members: {
             total: Math.floor(Math.random() * (1 - 12) + 12),
             activeNow: Math.floor(Math.random() * (1 - 12) + 12)

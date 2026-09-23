@@ -39,11 +39,12 @@ import { seedInDatabase } from './database/seeding/seeder.js'
 // import { seedFriendships } from './testing/seed-friendshipts'
 // import { seedPrivateRooms } from './testing/seed-private-rooms'
 
-const loggingStream = fs.createWriteStream('./logs/server.log', { flags: 'a' })
+/*loggingStream disattivato perché su docker è inutile*/
+// const loggingStream = fs.createWriteStream('./logs/server.log', { flags: 'a' })
 const fastify = Fastify({
     logger: {
         level: 'info',
-        stream: loggingStream
+        // stream: loggingStream
     }
 })
 

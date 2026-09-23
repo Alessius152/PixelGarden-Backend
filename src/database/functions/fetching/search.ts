@@ -20,7 +20,6 @@ async function fetchUsersByFilter(query: string, cursor: Buffer): Promise<{ tota
         replacements: { query, cursor }
     })
 
-    //questa count la possiamo cache-are alla grandissima
     const totalRecords = await User.count({
         where: {
             username: {

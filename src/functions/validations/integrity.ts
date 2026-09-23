@@ -1,9 +1,8 @@
-import { request } from "express"
 import { JWT_PREFIX } from "../../objects/constants.js"
 import { tokenValidationError } from "../../types/authentication.js"
 import { serverAPIErrorCode } from "../../objects/apiErrors.js"
 
-type authorization = typeof request.headers['authorization']
+type authorization = any
 type token = { token: string }
 
 function validateJWTHeaderStructure(authorizationHeader: authorization): token | tokenValidationError {

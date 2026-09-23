@@ -6,8 +6,6 @@ import User from "./User.model.js"
 import { databaseTablesName } from "../../objects/constants.js"
 
 /*
-requestId: 
-    uno snowflake id univoco per richiesta.
 pairKey:
     la stessa spiegazione del file Friendship.model.ts
 */

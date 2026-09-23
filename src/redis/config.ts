@@ -12,7 +12,7 @@ async function connectRedis(log: FastifyBaseLogger): Promise<ReturnType<typeof c
         url: REDIS_URL,
         socket: {
             connectTimeout: 3000,
-            reconnectStrategy: () => false // niente retry infinito , solo perché se no vedo 2M di log di errore
+            reconnectStrategy: () => false // niente retry infinito
         }
     })
 
